@@ -1,6 +1,8 @@
 import 'package:e_course/constants.dart';
 import 'package:e_course/defaultButton.dart';
 import 'package:e_course/string.dart';
+import 'package:e_course/your-course/main-Course.dart';
+import 'package:e_course/your-course/routs.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,11 +20,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
+      initialRoute: MainCourse.routeName,
+      routes: routes,
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  static String routeName = "/Homepage";
   const HomePage({Key? key}) : super(key: key);
 
   @override
