@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:e_course/card/card.dart';
 import 'package:e_course/constants.dart';
 import 'package:e_course/defaultButton.dart';
 import 'package:flutter/material.dart';
@@ -206,7 +207,11 @@ class Body extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 21, bottom: 23),
-          child: DefaultButton(text: "Go PRO NOW  and save 80%", press: () {}),
+          child: DefaultButton(
+              text: "Go PRO NOW  and save 80%",
+              press: () {
+                Navigator.pushNamed(context, Cards.routeName);
+              }),
         )
       ],
     );

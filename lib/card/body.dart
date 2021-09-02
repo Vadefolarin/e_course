@@ -107,7 +107,8 @@ class Body extends StatelessWidget {
               top: 25,
               bottom: 40,
             ),
-            child: DefaultButton(text: "Use this card", press: () {}),
+            child:
+                DefaultButton(text: "Use this card to continue", press: () {}),
           )
         ],
       ),
